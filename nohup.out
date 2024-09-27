@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/yoshimiakazawa/yahoo_scraper/news_scheduler.py", line 3, in <module>
+    from scraper import get_news  # ニュース取得関数をインポート
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yoshimiakazawa/yahoo_scraper/scraper.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'

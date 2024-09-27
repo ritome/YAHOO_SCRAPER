@@ -1,0 +1,111 @@
+/* ベーススタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #1e90ff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    background: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 成績テーブルのスタイル */
+.stats-section {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto; /* レスポンシブ対応のための横スクロール */
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ニュースセクションのスタイル */
+.news-section {
+    margin-bottom: 20px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.news-item:hover {
+    background-color: #f9f9f9;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大谷翔平の成績と最新ニュース</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>大谷翔平の成績と最新ニュース</h1>
+    </header>
+
+    <main>
+        <!-- 成績セクション -->
+        <section class="stats-section">
+            <h2>選手の成績</h2>
+            <div class="table-container">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            {% for key in stats.keys() %}
+                            <th>{{ key }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {% for value in stats.values() %}
+                            <td>{{ value }}</td>
+                            {% endfor %}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ニュースセクション -->
+        <section class="news-section">
+            <h2>最新ニュース</h2>
+            <ul class="news-list">
+                {% for item in news %}
+                <li class="news-item">
+                    <a href="{{ item.link }}" target="_blank">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 大谷翔平のファンサイト</p>
+    </footer>
+</body>
+</html>
