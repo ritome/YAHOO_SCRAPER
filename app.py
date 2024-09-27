@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template
 from scraper import get_player_stats, get_news  # ニュース取得関数をインポート
 
@@ -12,4 +13,5 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
